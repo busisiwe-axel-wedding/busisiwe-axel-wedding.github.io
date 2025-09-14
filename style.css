@@ -16,6 +16,10 @@ body {
     color: #313030; /* Your main color */
     margin: 0;
     padding: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+
 }
 
 /* Header and navigation styling */
@@ -34,7 +38,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #93C078; /* Your secondary color for links */
+    color: #840297; /* Your secondary color for links */
 }
 
 /* Two-column layout */
