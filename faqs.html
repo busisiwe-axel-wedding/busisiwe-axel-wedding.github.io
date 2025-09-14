@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All the details related to our wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://busisiweaxelwedding.wordpress.com/wp-content/uploads/2025/06/initials.png?w=313" alt="Busisiwe and Axel Initials" style="width:195px; height:auto;"> 
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="our-story.html">Our Story</a></li>
+                <li><a href="what-to-expect.html">What to expect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://busisiweaxelwedding.wordpress.com/wp-content/uploads/2025/06/frame-13-1.png?w=1024" alt="Wedding Welcome Banner">
+
+      
+
+        <p>Welcome!</p>
+        <div class="column">
+            <div style="text-align: center;">
+             <p>The wedding festival between Busisiwe and Axel draws closer and we are looking forward to celebrating the beginning of our union with you.</p>
+</div>
+
+        </div>
+       
+
+        
+        <div class="two-column-layout">
+            <div class="column">
+                <div style="text-align: center;">
+                      <!-- Carousel Start -->
+        <div class="carousel-container" style="max-width:600px;margin:30px auto;position:relative;">
+            <button class="carousel-arrow" id="carousel-prev" style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8592;</button>
+            <div class="carousel-images" style="overflow:hidden;">
+                <img class="carousel-image" src="C:\Users\busim\Downloads\wedding festival website assets\wedding website html\imgs\img1.jpg" style="width:100%;display:block;">
+                <img class="carousel-image" src="C:\Users\busim\Downloads\wedding festival website assets\wedding website html\imgs\img2.HEIC" style="width:100%;display:none;">
+                <img class="carousel-image" src="https://via.placeholder.com/600x300?text=Image+3" style="width:100%;display:none;">
+                <img class="carousel-image" src="https://via.placeholder.com/600x300?text=Image+4" style="width:100%;display:none;">
+                <img class="carousel-image" src="https://via.placeholder.com/600x300?text=Image+5" style="width:100%;display:none;">
+            </div>
+            <button class="carousel-arrow" id="carousel-next" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8594;</button>
+        </div>
+        <script>
+        const images = document.querySelectorAll('.carousel-image');
+        let current = 0;
+        document.getElementById('carousel-prev').onclick = function() {
+            images[current].style.display = 'none';
+            current = (current - 1 + images.length) % images.length;
+            images[current].style.display = 'block';
+        };
+        document.getElementById('carousel-next').onclick = function() {
+            images[current].style.display = 'none';
+            current = (current + 1) % images.length;
+            images[current].style.display = 'block';
+        };
+        </script>
+        <!-- Carousel End -->
+                    
+                </div> 
+            
+            </div>
+            <div class="column">
+                <p>This section is where you can add your story details.</p>
+            </div>
+        </div>
+ <p>Wedding location details</p>
+        <div class="two-column-layout">
+            <div class="column">
+                <details>
+                    <summary>Traditional South African wedding</summary>
+                    <p>Date: 14 February 2026</p>
+                    <p>Venue: The Mgwenya family home</p>
+                    <p>Address: 32 Parkwood Crescent</p>
+                    <p>Amandasig, 0182 Pretoria</p>
+                </details>
+            </div>
+            <div class="column">
+                <details>
+                    <summary>Western wedding</summary>
+                    <p>Date: 21 February 2026</p>
+                    <p>Venue: Rooftop on Bree</p>
+                    <p>Address: 170 Bree St</p>
+                    <p>8001 Cape Town</p>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Designed by Busisiwe Mgwenya.</p>
+        <nav>
+            <ul>
+        
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
