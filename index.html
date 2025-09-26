@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All the details related to our wedding</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
 
     <header>
-        <img src="https://busisiweaxelwedding.wordpress.com/wp-content/uploads/2025/06/initials.png?w=313" alt="Busisiwe and Axel Initials" style="width:195px; height:auto;"> 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-                <li><a href="ourstory.html">Our Story</a></li>
-                <li><a href="what-to-expect.html">What to expect</a></li>
-            </ul>
-        </nav>
+      <img src="imgs/initials.png.webp" alt="Busisiwe and Axel Initials" style="width:195px; height:auto;"> 
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="our-story.html">Our Story</a></li>
+          <li><a href="what-to-expect.html">What to expect</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <img src="imgs/headline.jpg" alt="Wedding Welcome Banner">
+      <img src="imgs/headline.jpg" alt="Wedding Welcome Banner">
 
+      <h1>Welcome!</h1>
       
-
-    <h1 style="font-weight:normal;">Welcome!</h1>
+      <div class="two-column-layout">
         <div class="column">
-            <div style="text-align: center;">
-             
-</div>
-
-        </div>
-       
-
-        
-        <div class="two-column-layout">
-            <div class="column">
-                <div style="text-align: center;">
-                  
-        <div class="carousel-container" style="max-width:600px;margin:30px auto;position:relative;">
-            <button class="carousel-arrow" id="carousel-prev" style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8592;</button>
-            <div class="carousel-images" style="overflow:hidden;">
+          <div style="text-align: center;">
+            
+	    <div class="carousel-container" style="max-width:600px;margin:30px auto;position:relative;">
+	      <button class="carousel-arrow" id="carousel-prev" style="position:absolute;left:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8592;</button>
+	      <div class="carousel-images" style="overflow:hidden;">
                 <img class="carousel-image" src="imgs/img1.jpeg" style="width:100%;display:block;">
                 <img class="carousel-image" src="imgs/img2.jpeg" style="width:100%;display:none;">
                 <img class="carousel-image" src="imgs/img3.jpeg" style="width:100%;display:none;">
                 <img class="carousel-image" src="imgs/img4.jpg" style="width:100%;display:none;">
                 <img class="carousel-image" src="imgs/img5.jpg" style="width:100%;display:none;">
-            </div>
-            <button class="carousel-arrow" id="carousel-next" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8594;</button>
-        </div>
-        <script>
-        const images = document.querySelectorAll('.carousel-image');
-        let current = 0;
-        document.getElementById('carousel-prev').onclick = function() {
-            images[current].style.display = 'none';
-            current = (current - 1 + images.length) % images.length;
-            images[current].style.display = 'block';
-        };
-        document.getElementById('carousel-next').onclick = function() {
-            images[current].style.display = 'none';
-            current = (current + 1) % images.length;
-            images[current].style.display = 'block';
-        };
-        </script>
-        <!-- Carousel End -->
-                    
-                </div> 
+	      </div>
+	      <button class="carousel-arrow" id="carousel-next" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:#fff;border:none;font-size:2rem;cursor:pointer;">&#8594;</button>
+	    </div>
+	    <script>
+	      const images = document.querySelectorAll('.carousel-image');
+	      let current = 0;
+	      document.getElementById('carousel-prev').onclick = function() {
+		  images[current].style.display = 'none';
+		  current = (current - 1 + images.length) % images.length;
+		  images[current].style.display = 'block';
+	      };
+	      document.getElementById('carousel-next').onclick = function() {
+		  images[current].style.display = 'none';
+		  current = (current + 1) % images.length;
+		  images[current].style.display = 'block';
+	      };
+	    </script>
+	    <!-- Carousel End -->
             
-            </div>
-            <div class="column">
-                <p>The wedding festival between Busisiwe and Axel draws closer and we are looking forward to celebrating the beginning of our union with you.</p>
-            </div>
+          </div> 
         </div>
- <h1 style="font-weight:normal;">Wedding location details</h1>
-
-
-                </details>
-            </div>
+        <div class="column">
+          <p>The wedding festival between Busisiwe and Axel draws closer and we are looking forward to celebrating the beginning of our union with you.</p>
         </div>
+      </div>
+      <h1>Wedding location details</h1>
+      <table>
+	<tr>
+	  <td>
+	    <h2>Traditional African wedding</h2>
+	    <b>Date:</b> Saturday 14th of February, 2026
+	    <br/>
+	    <b>Time:</b> 10AM
+	    <br/>
+	    <a href="https://maps.app.goo.gl/udFjoFRxy1AAHPFR6">The Mgwenya Family Home</a>
+	    <br/>
+	    23 Parkwood Crescent
+	    <br/>Amandasig, Pretoria
+	  </td>
+	  <td>
+	    <h2>European wedding</h2>
+	    <b>Date:</b> Saturday 21st of February, 2026
+	    <br/>
+	    <b>Time:</b> 2PM, ceremony at 3PM
+	    <br/>
+	    <a href="https://maps.app.goo.gl/ACHJEBxpMjxdKv599">Rooftop on Bree</a>
+	    <br/>
+	    170 Bree Street
+	    <br/>
+	    Cape Town
+	  </td>
+	</tr>
+      </table>
     </main>
 
     <footer>
-        <p>Designed by Busisiwe Mgwenya.</p>
-        <nav>
-            <ul>
-        
-            </ul>
-        </nav>
+      <p>Designed by Busisiwe Mgwenya.</p>
     </footer>
 
-</body>
+  </body>
 </html>
