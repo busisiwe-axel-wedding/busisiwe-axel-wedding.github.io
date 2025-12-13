@@ -122,3 +122,44 @@ body {
     
 }
 
+
+.photo-grid {
+    /* Set up the grid container */
+    display: grid;
+    
+    /* Define the columns: 3 columns, each taking up an equal fraction (1fr) of the space */
+    grid-template-columns: repeat(3, 1fr); 
+    
+    /* Set the gap/spacing between each image cell */
+    gap: 8px; 
+    
+    /* Optional: Center the entire collage on the page and give it a max width */
+    max-width: 900px; /* Adjust this width as needed for your design */
+    margin: 30px auto;
+    
+    /* Optional: Add a small border around the whole grid */
+    padding: 8px; 
+    background-color: #ffffff; /* Use your background colour if applicable */
+}
+
+/* Styling for the individual images within the grid */
+.photo-grid img {
+    width: 100%;
+    /* Ensure all cells are the same height for a perfect grid */
+    height: 100%; 
+    
+    /* VERY IMPORTANT: This ensures images fill the cell without being stretched, cropping as necessary */
+    object-fit: cover; 
+    
+    /* Ensures the image doesn't display any extra space below it */
+    display: block; 
+}
+
+/* Optional: Make the grid stack vertically on very small screens */
+@media (max-width: 600px) {
+    .photo-grid {
+        /* On small screens, switch to a single column */
+        grid-template-columns: 1fr; 
+    }
+}
+
