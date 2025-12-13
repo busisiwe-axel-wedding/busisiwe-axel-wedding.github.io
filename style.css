@@ -31,6 +31,9 @@ body {
     padding-right: 24px;
 }
 
+.left-align-text {
+    text-align: left; 
+}
 
 header img {
     width: 195px;
